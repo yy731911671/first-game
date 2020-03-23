@@ -4,6 +4,7 @@ import pygame
 pygame.init()
 # create a screen
 screen = pygame.display.set_mode([800,600],pygame.RESIZABLE)
+pygame.display.set_caption("FirstBlood")
 # fill with color WHITE
 screen.fill([255,255,255])
 # load and show the image of lanbo
@@ -22,5 +23,5 @@ while mRunning:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             mRunning = False
-            pygame.quit()
-    pygame.display.flip()        
+        pygame.display.flip()
+pygame.quit()
